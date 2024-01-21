@@ -10,6 +10,10 @@ import { motion } from 'framer-motion'
 
 // variants
 import { fadeIn } from '../variants'
+
+// typing animation
+import { Typewriter } from 'react-simple-typewriter'
+
 const Home = () => {
   return (
     <div className='bg-primary/60 h-full'>
@@ -21,9 +25,14 @@ const Home = () => {
             initial='hidden' 
             animate='show' 
             exit='hidden'
-            className='h1 xl:mt-10'>
-            Tranforming Idea<br /> Into {' '}
-            <span className='text-accent'>Digital Reality</span>
+            className='h1 xl:mt-12'>
+            Hi, I'm Shivam Baghel<br /> And I'm a {' '}
+            <span className='text-accent'>
+              <Typewriter
+                 words={['Frontend Developer', 'Backend Developer', 'FullStack Developer', 'Java Developer']}
+                 loop={false}
+              />
+            </span>
           </motion.h1>
           <motion.p 
             variants={fadeIn('down', 0.4)} 
