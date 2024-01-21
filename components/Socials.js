@@ -1,22 +1,26 @@
 import Link from 'next/link'
-import { RiLinkedinLine, RiGithubLine, RiTwitterXLine ,RiFacebookLine } from 'react-icons/ri';
+import { RiLinkedinLine, RiGithubLine, RiTwitterXLine ,RiFacebookLine ,RiInstagramFill} from 'react-icons/ri';
 
 const socials = [
   {
-    link: "www.google.com",
+    link: "https://www.linkedin.com/in/shivam-baghel-8a964b177/",
     icon:  RiLinkedinLine 
   },
   {
-    link: "www.google.com",
+    link: "https://github.com/Shivam798",
     icon:  RiGithubLine 
   },
   {
-    link: "www.google.com",
+    link: "https://twitter.com/ShivamBaghel_98",
     icon:  RiTwitterXLine 
   },
   {
-    link: "www.google.com",
+    link: "https://www.facebook.com/shivam.baghel.5030927",
     icon:  RiFacebookLine 
+  },
+  {
+    link: "https://www.instagram.com/anonymous.luffy",
+    icon:  RiInstagramFill 
   },
 ]
 
@@ -25,7 +29,7 @@ const Socials = () => {
     <div className='flex items-center gap-x-10 text-lg'>
       {socials.map((item, index) => {
         return (
-          <Link key={index} href={item.link} className='hover:text-accent transition-all duration-300 '>
+          <Link key={index} target="_blank" href={item.link} className='hover:text-accent transition-all duration-300 '>
             <item.icon  />
           </Link>
         )
