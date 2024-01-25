@@ -10,11 +10,13 @@ import { useRouter } from 'next/router';
 
 // framer motion
 import { AnimatePresence, motion } from 'framer-motion';
+import Cursor from '../components/Cursor';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
     <Layout>
+      <Cursor/>
       <AnimatePresence mode='wait'>
         <motion.div key={router.route} className='h-full'>
           <Transition/>

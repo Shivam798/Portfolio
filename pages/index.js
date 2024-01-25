@@ -40,9 +40,7 @@ const Home = () => {
             animate='show' 
             exit='hidden'
             className='max-w-sm xl:max-w-xl mx-auto xl:ml-0 mb-10 xl:mb-16 '>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            nostrum quam reprehenderit vero, tenetur voluptatem nulla aut
-            aspernatur dolores ut.
+            Transforming ideas into tangible web applications.My goal is to use my knowledge and problem-solving approach to help improve the world for everyone. Leveraging cutting-edge technology and my dedication to innovation
           </motion.p>
           <div className='flex justify-center xl:hidden relative'>
             <ProjectsBtn />
