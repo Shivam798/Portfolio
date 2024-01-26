@@ -31,7 +31,7 @@ const aboutData = [
         names: [
           'Javascript',
           "Java",
-          "Python" 
+          "Python"
         ],
       },
       {
@@ -58,12 +58,12 @@ const aboutData = [
     info: [
       {
         title: 'Software Developer Engineer - ',
-        source:'KULIZA',
+        source: 'KULIZA',
         stage: 'Aug 2023 - Present',
       },
       {
         title: 'Software Developer Engineer - ',
-        source:'PAYTM',
+        source: 'PAYTM',
         stage: 'Jan 2023 - June 2023',
       },
     ],
@@ -196,11 +196,11 @@ const About = () => {
                 <div className="flex gap-x-4">
                   {
                     item.names?.map((name, nameindex) => {
-                      return(
+                      return (
                         <div className="group">
                           <div key={nameindex} className="text-white">{name}</div>
                         </div>
-                      ) 
+                      )
                     })
                   }
                 </div>

@@ -14,7 +14,7 @@ const Header = () => {
             priority={true}
           />
         </Link>
-        <Socials/>
+        <Socials />
       </div>
     </div>
   </header>;
