@@ -27,33 +27,29 @@ const aboutData = [
     title: 'skills',
     info: [
       {
-        title: 'Web Development',
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+        title: 'Languages',
+        names: [
+          'Javascript',
+          "Java",
+          "Python" 
         ],
       },
       {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      },
-    ],
-  },
-  {
-    title: 'awards',
-    info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: 'Frameworks/Libraries',
+        names: [
+          'React',
+          "Next.js",
+          "Node.js",
+          "Spring-Boot"
+        ],
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'Databases',
+        names: [
+          'MongoDB',
+          "PostgreSQL",
+          "MySQL",
+        ],
       },
     ],
   },
@@ -61,16 +57,29 @@ const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Software Developer Engineer - ',
+        source:'KULIZA',
+        stage: 'Aug 2023 - Present',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Software Developer Engineer - ',
+        source:'PAYTM',
+        stage: 'Jan 2023 - June 2023',
+      },
+    ],
+  },
+  {
+    title: 'achievements',
+    info: [
+      {
+        title: 'Front-End Web UI Frameworks - ',
+        source: 'Coursera',
+        stage: 'Sept 2021',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Certificate of Recognition - ',
+        source: 'PAYTM',
+        stage: 'April 2023',
       },
     ],
   },
@@ -78,23 +87,33 @@ const aboutData = [
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'B.Tech( CSE ) - ',
+        source: 'G.L. Bajaj',
+        stage: '2019 - 2023',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Intermediate - ',
+        source: 'RSS internation School',
+        stage: '2019',
       },
     ],
   },
 ];
 
+const leet = {
+  title: "Leetcode problems solved",
+  number: 400,
+  link: "https://leetcode.com/Shivam_007/"
+}
+const gfg = {
+  title: "GFG problems solved",
+  number: 300,
+  link: "https://auth.geeksforgeeks.org/user/shivambghl2000/profile"
+}
 import Avatar from '../../components/Avatar'
 import Circles from '../../components/Circles'
+import Link from "next/link";
+import Counter from "../../components/Counter";
 
 const About = () => {
   const [index, setIndex] = useState(0)
@@ -109,7 +128,7 @@ const About = () => {
           exit='hidden'
           className="h2"
         >
-          Captivating <span className="text-accent">stories</span> birth magnificant designs.
+          Crafting Concepts into <span className="text-accent">Code</span>
         </motion.h2>
         <motion.p
           variants={fadeIn('right', 0.2)}
@@ -118,7 +137,7 @@ const About = () => {
           exit='hidden'
           className="max-w-[500px] mx-auto xl:mx-0 mb-12 px-2 xl:px-0"
         >
-          10 years ago, I began freelancing as a developer. Since then, I've done remote work for agencies, counsulted for startups, and collaborated on digital products for business and consumer use.
+          In the digital realm, I'm the developer turning abstract concepts into functional reality through code. With precision and passion, I craft seamless applications, each line a purposeful stroke, shaping immersive experiences beyond expectations.
         </motion.p>
         <motion.div
           variants={fadeIn('right', 0.2)}
@@ -129,22 +148,16 @@ const About = () => {
           <div className="flex flex-1 xl:gap-x-6">
             {/* experience */}
             <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-              <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                <CountUp start={0} end={10} duration={5} /> +
-              </div>
-              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Years of Experiance</div>
+              <Counter end={leet.number} title={leet.title} link={leet.link} />
             </div>
             {/* Clients */}
             <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-              <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                <CountUp start={0} end={250} duration={5} /> +
-              </div>
-              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Satisfied Clients</div>
+              <Counter end={gfg.number} title={gfg.title} link={gfg.link} />
             </div>
             {/* Projects */}
             <div className="relative flex-1 ">
               <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                <CountUp start={0} end={650} duration={5} /> +
+                <CountUp start={0} end={10} duration={5} /> +
               </div>
               <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Finished Projects</div>
             </div>
@@ -177,13 +190,17 @@ const About = () => {
           {aboutData[index].info.map((item, itemindex) => {
             return (
               <div key={itemindex} className="flex flex-1 flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                <div className="font-light mb-2 md:mb-0">{item.title}<span className="text-white">{item.source}</span></div>
                 <div className="hidden md:flex">-</div>
                 <div>{item.stage}</div>
                 <div className="flex gap-x-4">
                   {
-                    item.icons?.map((icon, iconindex) => {
-                      return <div className="text-2xl text-white ">{icon}</div>
+                    item.names?.map((name, nameindex) => {
+                      return(
+                        <div className="group">
+                          <div key={nameindex} className="text-white">{name}</div>
+                        </div>
+                      ) 
                     })
                   }
                 </div>

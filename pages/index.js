@@ -20,35 +20,35 @@ const Home = () => {
       <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30  '>
         <div
           className='text-center flex flex-col justify-center xl:pt-39 xl:text-left h-full container mx-auto'>
-          <motion.h1 
-            variants={fadeIn('down', 0.4)} 
-            initial='hidden' 
-            animate='show' 
+          <motion.h1
+            variants={fadeIn('down', 0.4)}
+            initial='hidden'
+            animate='show'
             exit='hidden'
             className='h1 xl:mt-12'>
             Hi, I'm Shivam Baghel<br /> And I'm a {' '}
             <span className='text-accent'>
               <Typewriter
-                 words={['Frontend Developer', 'Backend Developer', 'FullStack Developer', 'Java Developer']}
-                 loop={false}
+                words={['Frontend Developer', 'Backend Developer', 'FullStack Developer', 'Java Developer']}
+                loop={false}
               />
             </span>
           </motion.h1>
-          <motion.p 
-            variants={fadeIn('down', 0.4)} 
-            initial='hidden' 
-            animate='show' 
+          <motion.p
+            variants={fadeIn('down', 0.4)}
+            initial='hidden'
+            animate='show'
             exit='hidden'
             className='max-w-sm xl:max-w-xl mx-auto xl:ml-0 mb-10 xl:mb-16 '>
-            Transforming ideas into tangible web applications.My goal is to use my knowledge and problem-solving approach to help improve the world for everyone. Leveraging cutting-edge technology and my dedication to innovation
+            In the world of bits and bytes, I stand as a full-stack developer, sculpting comprehensive web solutions. Bridging the gap between design and functionality, my code is the backbone of seamless, user-centric experiences.
           </motion.p>
           <div className='flex justify-center xl:hidden relative'>
             <ProjectsBtn />
           </div>
           <motion.div
-            variants={fadeIn('down', 0.4)} 
-            initial='hidden' 
-            animate='show' 
+            variants={fadeIn('down', 0.4)}
+            initial='hidden'
+            animate='show'
             exit='hidden'
             className='hidden xl:flex'
           >
@@ -60,16 +60,16 @@ const Home = () => {
         <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat 
           w-full h-full absolute mix-blend-color-dodge translate-z-0 '>
         </div>
-        <ParticlesContainter/>
-        <motion.div 
+        <ParticlesContainter />
+        <motion.div
           className='w-full h-full max-w-[700px] max-h-[600px] absolute -bottom-32  lg:bottom-0 lg:right-[2%]'
-          variants={fadeIn('up', 0.4)} 
-          transition={{duration:1,ease:'easeInOut'}}
-          initial='hidden' 
-          animate='show' 
+          variants={fadeIn('up', 0.4)}
+          transition={{ duration: 1, ease: 'easeInOut' }}
+          initial='hidden'
+          animate='show'
           exit='hidden'
         >
-          <Avatar/>
+          <Avatar />
         </motion.div>
       </div>
     </div>
