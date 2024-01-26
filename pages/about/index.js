@@ -1,22 +1,4 @@
 import React, { useState } from "react";
-
-// icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
-
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
-
 import { motion } from "framer-motion";
 import { fadeIn } from '../../variants'
 import CountUp from "react-countup";
@@ -110,9 +92,7 @@ const gfg = {
   number: 300,
   link: "https://auth.geeksforgeeks.org/user/shivambghl2000/profile"
 }
-import Avatar from '../../components/Avatar'
 import Circles from '../../components/Circles'
-import Link from "next/link";
 import Counter from "../../components/Counter";
 
 const About = () => {
