@@ -27,9 +27,7 @@ const Work = () => {
             animate="show" 
             exit="hidden"
             className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A eveniet
-            dignissimos distinctio tempore harum laudantium. Beatae perspiciatis
-            mollitia animi quaerat?
+            From ideation to implementation, my work is a testament to the fusion of technology, creativity, and a relentless pursuit of perfection.
           </motion.p>
         </div>
         <motion.div 
