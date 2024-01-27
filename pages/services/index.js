@@ -27,9 +27,7 @@ const Services = () => {
             animate="show" 
             exit="hidden"
             className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A eveniet
-            dignissimos distinctio tempore harum laudantium. Beatae perspiciatis
-            mollitia animi quaerat?
+            As a full-stack developer, I create seamless web solutions, blending design, functionality, and security. My expertise spans front-end interfaces, back-end logic, and database management, ensuring optimal performance throughout the development cycle.
           </motion.p>
         </div>
         <motion.div 

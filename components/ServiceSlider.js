@@ -6,42 +6,48 @@ import "swiper/css/pagination"
 import {Mousewheel, FreeMode,Pagination } from 'swiper'
 
 import {
-  RxCrop,
-  RxPencil2,
-  RxDesktop,
-  RxReader,
   RxRocket,
-  RxArrowRight,
   RxArrowTopRight,
 } from "react-icons/rx";
+
+import { AiOutlineCloudServer } from "react-icons/ai";
+import { GrReactjs } from "react-icons/gr";
+import { VscDebugConsole } from "react-icons/vsc";
+import { PiPlugsConnectedBold } from "react-icons/pi";
+import { GoCodescan } from "react-icons/go";
 
 
 // data
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <GrReactjs />,
+    title: 'Front-End Development',
+    description: 'Designing responsive UI with integrated third-party APIs for enhanced functionality.',
   },
   {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <AiOutlineCloudServer />,
+    title: 'Backend developement',
+    description: 'Crafting API, database management for performance enhancement.',
   },
   {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <PiPlugsConnectedBold />,
+    title: 'Full-Stack Development',
+    description: 'Integration of front-end and back-end components for seamless functionality',
   },
   {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <VscDebugConsole />,
+    title: 'Testing and Debugging',
+    description: 'Debugging and resolving issues to maintain a stable and reliable application',
   },
   {
     icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Deployment ',
+    description: 'Deploying and maintaining applications for optimal production performance.',
+  },
+  {
+    icon: <GoCodescan />,
+    title: 'Problem Solving and Optimization ',
+    description: 'Resolving issues , scalability and efficiency optimization of the code',
   },
 ];
 
@@ -61,13 +67,13 @@ const ServiceSlider = () => {
   pagination={{clickable:true }}
   modules={[Mousewheel,FreeMode,Pagination]}
   mousewheel={true}
-  className='h-[240px] sm:h-[340px]'
+  className='h-[240px] sm:h-[380px]'
   >
     {
       serviceData.map((item,index)=>{
         return (
           <SwiperSlide key={index}>
-            <div className='bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-
+            <div className='bg-[rgba(65,47,123,0.15)]  min-h-[200px] sm:min-h-[340px] rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-
             hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
               <div className='text-4xl text-accent mb-4 '>{item.icon}</div>
               <div className='mb-8'>
