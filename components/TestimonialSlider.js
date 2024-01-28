@@ -1,25 +1,18 @@
 // testimonial data
 const testimonialData = [
   {
-    image: '/t-avt-1.png',
-    name: 'Anne Smith',
-    position: 'Customer',
+    image: '/test_1.png',
+    name: 'Shikhar Gupta',
+    position: 'Team Member',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      "Collaborating with Shivam isn't just about projects, it's an experience with a talented and dedicated professional. His contagious passion for crafting digital solutions ensures every collaboration is a success."
   },
   {
-    image: '/t-avt-2.png',
-    name: 'Jane Doe',
-    position: 'Customer',
+    image: '/test2.png',
+    name: 'Tarun Bhardwaj',
+    position: 'Team Member',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
-  },
-  {
-    image: '/t-avt-3.png',
-    name: 'Jhon Doe',
-    position: 'Customer',
-    message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Partnering with Shivam on multiple projects has been exceptional. His perfect blend of creativity and technical prowess consistently exceeds expectations.',
   },
 ];
 
