@@ -9,6 +9,7 @@ const ProjectsBtn = () => {
       flex justify-center items-center bg-circleStar bg-cover bg-center
       bg-no-repeat group">
       <Image
+        alt="rounded-text"
         src={'/rounded-text.png'}
         width={141}
         height={148}

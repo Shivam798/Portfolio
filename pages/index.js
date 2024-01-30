@@ -25,8 +25,8 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='h1 xl:mt-12'>
-            Hi, I'm Shivam Baghel<br /> And I'm a {' '}
+            className='h2 xl:mt-20'>
+            Hi, I&apos;m Shivam Baghel,<br /> a {' '}
             <span className='text-accent'>
               <Typewriter
                 words={['Frontend Developer', 'Backend Developer', 'FullStack Developer', 'Java Developer']}

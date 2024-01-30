@@ -117,7 +117,7 @@ const About = () => {
           exit='hidden'
           className="max-w-[500px] mx-auto xl:mx-0 mb-12 px-2 xl:px-0"
         >
-          In the digital realm, I'm the developer turning abstract concepts into functional reality through code. With precision and passion, I craft seamless applications, each line a purposeful stroke, shaping immersive experiences beyond expectations.
+          In the digital realm, I&apos;m the developer turning abstract concepts into functional reality through code. With precision and passion, I craft seamless applications, each line a purposeful stroke, shaping immersive experiences beyond expectations.
         </motion.p>
         <motion.div
           variants={fadeIn('right', 0.2)}
@@ -177,8 +177,8 @@ const About = () => {
                   {
                     item.names?.map((name, nameindex) => {
                       return (
-                        <div className="group">
-                          <div key={nameindex} className="text-white">{name}</div>
+                        <div key={nameindex} className="group">
+                          <div  className="text-white">{name}</div>
                         </div>
                       )
                     })
