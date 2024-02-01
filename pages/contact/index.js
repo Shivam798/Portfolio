@@ -13,7 +13,6 @@ const Contact = () => {
   const EMAILJS_KEY = process.env.NEXT_PUBLIC_EMAILJS_KEY
   const sendEmail =(e)=>{
     e.preventDefault();
-    console.log(SERVICE_KEY);
     emailjs.sendForm(SERVICE_KEY, TEMPLATE_KEY, formRef.current, EMAILJS_KEY)
       .then((result)=>{
         console.log(result.text);
