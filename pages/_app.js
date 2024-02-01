@@ -16,7 +16,9 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
     <Layout>
-      <Cursor/>
+      <div className='hidden lg:block'>
+        <Cursor/>
+      </div>
       <AnimatePresence mode='wait'>
         <motion.div key={router.route} className='h-full'>
           <Transition/>
