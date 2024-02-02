@@ -51,7 +51,7 @@ const aboutData = [
     ],
   },
   {
-    title: 'achievements',
+    title: 'Milestones',
     info: [
       {
         title: 'Front-End Web UI Frameworks - ',
@@ -66,7 +66,7 @@ const aboutData = [
     ],
   },
   {
-    title: 'credentials',
+    title: 'Academics',
     info: [
       {
         title: 'B.Tech( CSE ) - ',
@@ -97,8 +97,10 @@ import Counter from "../../components/Counter";
 
 const About = () => {
   const [index, setIndex] = useState(0)
-  return <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
-    <Circles />
+  return <div className="h-auto lg:h-full bg-primary/30 pt-32 pb-20 text-center xl:text-left">
+    <div className="hidden lg:block">
+      <Circles /> 
+    </div>
     <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
       <div className="flex-1 flex flex-col justify-center">
         <motion.h2
@@ -124,7 +126,7 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
+          className=" md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
           <div className="flex flex-1 xl:gap-x-6">
             {/* experience */}
             <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
@@ -149,9 +151,9 @@ const About = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+        className="flex flex-col w-full xl:max-w-[48%] lg:h-[280px]"
       >
-        <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 ">
+        <div className="flex gap-x-3 xl:gap-x-8 mx-auto xl:mx-0 mb-4 ">
           {aboutData.map((item, itemindex) => {
             return (
               <div
@@ -190,6 +192,7 @@ const About = () => {
         </div>
       </motion.div>
     </div>
+    
   </div>;
 };
 
