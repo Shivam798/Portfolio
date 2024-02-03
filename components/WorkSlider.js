@@ -65,7 +65,7 @@ const WorkSlider = () => {
       pagination={{ clickable: true }}
       modules={[Mousewheel, Pagination]}
       mousewheel={true}
-      className='h-[300px] sm:h-[500px]'
+      className='h-[270px] sm:h-[500px]'
     >
       {
         workSlides.slides.map((slide, index) => {
@@ -82,7 +82,7 @@ const WorkSlider = () => {
                         '></div>
                         <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 font-bold transition-all duration-300'>
                           <Link href={slide.link} target="_blank" >
-                            <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>  
+                            <div className='flex items-center gap-x-2 text-[10px] md:text-[13px] tracking-[0.2em]'>  
                               <div className='delay-100 text-accent'>LIVE</div>
                               <div className='text-accent translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>PROJECT</div>
                               <div className='text-black  text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'><BsArrowRight /></div>
