@@ -29,7 +29,7 @@ const Services = () => {
             animate="show" 
             exit="hidden"
             className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-            As a full-stack developer, I create seamless web solutions, blending design, functionality, and security. My expertise spans front-end interfaces, back-end logic, and database management, ensuring optimal performance throughout the development cycle.
+            As a full-stack developer, I craft seamless web solutions, excelling in design, functionality, and security across front-end, back-end, and database management for optimal performance.
           </motion.p>
         </div>
         <motion.div 

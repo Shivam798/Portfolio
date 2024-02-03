@@ -63,17 +63,17 @@ const ServiceSlider = () => {
       spaceBetween:15
     }    
   }}
-  freeMode={true}
+  // freeMode={true}
   pagination={{clickable:true }}
-  modules={[Mousewheel,FreeMode,Pagination]}
+  modules={[Mousewheel,Pagination]}
   mousewheel={true}
-  className='h-[240px] sm:h-[380px]'
+  className='h-[260px] sm:h-[380px]'
   >
     {
       serviceData.map((item,index)=>{
         return (
           <SwiperSlide key={index}>
-            <div className='bg-[rgba(65,47,123,0.15)]  min-h-[200px] sm:min-h-[340px] rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-
+            <div className='bg-[rgba(65,47,123,0.15)]  min-h-[200px] sm:min-h-[340px] rounded-lg px-6 py-8  flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-
             hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
               <div className='text-4xl text-accent mb-4 '>{item.icon}</div>
               <div className='mb-8'>

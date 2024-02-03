@@ -30,9 +30,9 @@ import { FaQuoteLeft } from "react-icons/fa";
 const TestimonialSlider = () => {
   return (
     <Swiper
-      navigation={true}
+      // navigation={true}
       pagination={{ clickable: true }}
-      modules={[Navigation,Mousewheel, Pagination]}
+      modules={[Mousewheel, Pagination]}
       mousewheel={true}
       className=' sm:h-[380px]'
     >
