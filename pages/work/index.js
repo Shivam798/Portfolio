@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
 const Work = () => {
-  return <div className='h-full lg:h-full bg-primary/30 pt-32 pb-20  items-center'>
+  return <div className='h-auto lg:h-full bg-primary/30 pt-32 pb-20  items-center'>
     <div className="hidden lg:block">
       <Circles /> 
     </div>

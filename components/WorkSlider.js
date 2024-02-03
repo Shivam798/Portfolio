@@ -65,7 +65,7 @@ const WorkSlider = () => {
       pagination={{ clickable: true }}
       modules={[Mousewheel, Pagination]}
       mousewheel={true}
-      className='h-[270px] sm:h-[500px]'
+      className='h-[280px] sm:h-[500px]'
     >
       {
         workSlides.slides.map((slide, index) => {

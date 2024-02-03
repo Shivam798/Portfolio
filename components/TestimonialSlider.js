@@ -5,7 +5,7 @@ const testimonialData = [
     name: 'Shikhar Gupta',
     position: 'Team Member',
     message:
-      "Collaborating with Shivam isn't just about projects, it's an experience with a talented and dedicated professional. His contagious passion for crafting digital solutions ensures every collaboration is a success."
+      "Collaborating with Shivam is an enriching experience ,his dedication guarantee successful projects, fueled by a contagious passion for crafting digital solutions."
   },
   {
     image: '/test2.png',
@@ -30,12 +30,11 @@ import { FaQuoteLeft } from "react-icons/fa";
 const TestimonialSlider = () => {
   return (
     <Swiper
-      // spaceBetween={10}
       navigation={true}
       pagination={{ clickable: true }}
       modules={[Navigation,Mousewheel, Pagination]}
       mousewheel={true}
-      className='h-[400px] sm:h-[380px]'
+      className=' sm:h-[380px]'
     >
       {
         testimonialData.map((person, index) => {
@@ -53,7 +52,7 @@ const TestimonialSlider = () => {
                   </div>
                 </div>
                 {/* message */}
-                <div className='flex-1 flex flex-col justify-center before:w-[1px]
+                <div className='flex-1 flex flex-col justify-center pb-6 before:w-[1px]
                  xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20'>
                   {/* quote icon */}
                   <div className='mb-4 '>
