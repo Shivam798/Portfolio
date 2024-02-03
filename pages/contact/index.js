@@ -5,6 +5,7 @@ import { fadeIn } from '../../variants'
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from "react-hot-toast";
+import Bulb from "../../components/Bulb";
 
 const Contact = () => {
   const formRef = useRef();
@@ -23,9 +24,9 @@ const Contact = () => {
         toast.error("Email Send Failed",error.text)
       })    
   }
-  return <div className="h-full bg-primary/30 ">
+  return <div className="h:auto lg:h-full bg-primary/30 pt-32 pb-20 lg:pt-20 items-center ">
     <Toaster position="top-center"/>
-    <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
+    <div className="container mx-auto  text-center xl:text-left flex justify-center h-full">
       <div className="flex flex-col w-full max-w-[700px]">
         <motion.h2
           variants={fadeIn('up', 0.2)}
@@ -61,7 +62,10 @@ const Contact = () => {
         </motion.form>
       </div>
     </div>
-    <Circles/>
+    <div className="hidden lg:block">
+      <Circles /> 
+      <Bulb/>
+    </div>
   </div>;
 };
 
